@@ -14,6 +14,7 @@ int clearBit(int n, int i) // Clear bit means at that position, make zero ('0')
 {
     return (n & ~(1 << i));
 }
+// // update bit means at that position, make 1
 int updateBit(int n, int i, int value)
 {
     // for updating a bit, we first clearbit and set bit
