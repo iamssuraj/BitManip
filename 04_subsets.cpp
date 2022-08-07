@@ -2,8 +2,9 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-void subsets(vector<char> a, int n)
+void subsets(vector<char> a)
 {
+    int n = a.size();
     for (int i = 0; i < 1 << n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -21,6 +22,6 @@ signed main()
     v.push_back('b');
     v.push_back('c');
     v.push_back('d');
-    subsets(v, 4);
+    subsets(v);
     return 0;
 }
